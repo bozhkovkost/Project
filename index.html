@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="style.css">
     <link href="http://fonts.cdnfonts.com/css/post-no-bills-jaffna" rel="stylesheet">
     <title>Porten</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-	<header class="header">
-	        <div class="header__inner">
-	        	<div class="header__contacts"  id="header__contacts">
+	<header class="header" >
+	        <div class="container">
+	        	<div class="header__contacts" >
 		             <ul class="contacts__info">
 		                <li class="nav__info" ><img src="img/phone.svg" alt="phone"></li>
 		                <li class="nav__info" href="#">8 (812) 123-45-67</li>
@@ -24,13 +26,13 @@
                     </nav>
 	            </div>
 	         </div>
-	         <div class="header__link fi" id="header__link">
+	         <div class="header__link " id="header__link">
 	            <div class="header__navigation">
 	            	<a class="header__Logo" href="#"><img src="img/PORTEN.svg" alt=""></a>
-	            	<nav class="navigation__nav">
-	            		<a class="nav__link" href="#">Новая коллекция</a>
-	                   	<a class="nav__link" href="#">поступления</a>
-	                   	<a class="nav__link" href="#">бренды</a>
+	            	<nav class="navigation__nav" id="nav">
+	            		<a class="nav__link" href="#" data-scroll="#collection">Новая коллекция</a>
+	                   	<a class="nav__link" href="#" data-scroll="#new">поступления</a>
+	                   	<a class="nav__link" href="#" data-scroll="#brands">бренды</a>
 	                   	<a class="nav__img" href="#"><img src="img/basket.svg" alt="basket"></a>
 	                   	<a class="nav__img" href="#"><img src="img/loap.svg" alt="loap"></a>
 	            	</nav>
@@ -38,7 +40,7 @@
 	        </div>
 	</header>
 
-	<div class="section__logo">
+	<div class="section__logo" id="header">
 		<div class="container">
 			<div class="logo__inner">
 				<div class="square__title">
@@ -52,10 +54,9 @@
 		</div>
 	</div>
 
-	<section class="section__collection">
-		<div class="container">
+	<section class="section__collection" id="collection">
 			<div class="collection__item">
-				<div class="collection__items1 collection__items1">
+				<div class="collection__items1">
 					<div class="title__products">СЕЗОН 2020/21</div>
 					<div class="catalog__products">
 						<div class="products">
@@ -92,73 +93,75 @@
 					<div class="button__items4"><a class="button__active" href="#">посмотреть коллекцию</a></div>
 				</div>
 			</div>
-		</div>
 	</section>
 
-	<div class="main__product">
-			<div class="main__inner">
-				<div class="product__title">новые поступления</div>
-				<div class="main__catalog">
-							<div class="product__catalog">
-								<img src="img/clock.png" alt="clock">
-								<div class="description">
-									<p>Louis XVI ATHOS</p>
-									<p>165 000 руб.  </p>
+	<div class="main__product" id="new">
+		<div class="container">
+				<div class="main__inner">
+					<div class="product__title">новые поступления</div>
+					<div class="main__catalog">
+								<div class="product__catalog">
+									<img src="img/clock.png" alt="clock">
+									<div class="description">
+										<p>Louis XVI ATHOS</p>
+										<p>165 000 руб.  </p>
+									</div>
 								</div>
-							</div>
-							<div class="product__catalog">
-								<img src="img/clock.png" alt="clock">
-								<div class="description">
-									<p>Louis XVI ATHOS</p>
-									<p>165 000 руб.  </p>
+								<div class="product__catalog">
+									<img src="img/clock.png" alt="clock">
+									<div class="description">
+										<p>Louis XVI ATHOS</p>
+										<p>165 000 руб.  </p>
+									</div>
 								</div>
-							</div>
-							<div class="product__catalog">
-								<img src="img/clock.png" alt="clock">
-								<div class="description">
-									<p>Louis XVI ATHOS</p>
-									<p>165 000 руб.  </p>
+								<div class="product__catalog">
+									<img src="img/clock.png" alt="clock">
+									<div class="description">
+										<p>Louis XVI ATHOS</p>
+										<p>165 000 руб.  </p>
+									</div>
 								</div>
-							</div>
-							<div class="product__catalog">
-								<img src="img/clock.png" alt="clock">
-								<div class="description">
-									<p>Louis XVI ATHOS</p>
-									<p>165 000 руб.  </p>
+								<div class="product__catalog">
+									<img src="img/clock.png" alt="clock">
+									<div class="description">
+										<p>Louis XVI ATHOS</p>
+										<p>165 000 руб.  </p>
+									</div>
 								</div>
-							</div>
-							<div class="product__catalog">
-								<img src="img/clock.png" alt="clock">
-								<div class="description">
-									<p>Louis XVI ATHOS</p>
-									<p>165 000 руб.  </p>
+								<div class="product__catalog">
+									<img src="img/clock.png" alt="clock">
+									<div class="description">
+										<p>Louis XVI ATHOS</p>
+										<p>165 000 руб.  </p>
+									</div>
 								</div>
-							</div>
-							<div class="product__catalog">
-								<img src="img/clock.png" alt="clock">
-								<div class="description">
-									<p>Louis XVI ATHOS</p>
-									<p>165 000 руб.  </p>
+								<div class="product__catalog">
+									<img src="img/clock.png" alt="clock">
+									<div class="description">
+										<p>Louis XVI ATHOS</p>
+										<p>165 000 руб.  </p>
+									</div>
 								</div>
-							</div>
-							<div class="product__catalog">
-								<img src="img/clock.png" alt="clock">
-								<div class="description">
-									<p>Louis XVI ATHOS</p>
-									<p>165 000 руб.  </p>
+								<div class="product__catalog">
+									<img src="img/clock.png" alt="clock">
+									<div class="description">
+										<p>Louis XVI ATHOS</p>
+										<p>165 000 руб.  </p>
+									</div>
 								</div>
-							</div>
-							<div class="product__catalog">
-								<img src="img/clock.png" alt="clock">
-								<div class="description">
-									<p>Louis XVI ATHOS</p>
-									<p>165 000 руб.  </p>
+								<div class="product__catalog">
+									<img src="img/clock.png" alt="clock">
+									<div class="description">
+										<p>Louis XVI ATHOS</p>
+										<p>165 000 руб.  </p>
+									</div>
 								</div>
-							</div>
-			</div>
-	</div>
+						</div>
+				</div>
+		</div>
+	
 
-	<div class="brends">
+	<div class="brends" id="brands">
 		<div class="container">
 			<div class="brends__inner">
 				<div class="brends__title">наши бренды</div>
@@ -213,7 +216,8 @@
 	</footer>
 
 
-	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
 	<script src="app.js"></script>
+
 </body>
 </html>
