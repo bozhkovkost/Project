@@ -6,21 +6,23 @@ body{
 }
 
 .container{
-	max-width: 1920px;
+	max-width: 1280px;
 	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
 /* Header */
 
-
-.header__inner{
+.header{
 
 }
 
+
 .header__contacts {
-	width: 100%;
-    max-width: 1109px;
-    margin: 0 auto;
+
+
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,20 +61,19 @@ body{
 }
 
 .header__link{
-    width: 100%;
-    max-width: 1920px;
+	width: 100%;
     background: #0F0F0F;
 }
 
 .header__link.fixed{
-    height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
 
-    position: fixed;
-    top: 0;
-    left: 0;
+
     z-index: 1;
-    border: 1px solid #FFF;
 }
+
 
 .header__navigation{
 	width: 100%;
@@ -122,14 +123,55 @@ body{
 	margin-left: 25px;
 }
 
+/* Burger */
+.burger {
+    display: none;
+    padding: 9px 2px;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.burger__item {
+    display: block;
+    width: 28px;
+    height: 3px;
+
+    background-color: #fff;
+
+    font-size: 0;
+    color: transparent;
+
+    position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+    content: "";
+    height: 100%;
+
+    background-color: #fff;
+
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.burger__item:before {
+    width: 30px;
+    top: -8px;
+}
+
+.burger__item:after {
+    width: 26px;
+    bottom: -8px;
+}
 
 
 /*Section*/
 
 .section__logo{
-	height: 810px;
-	max-width: 1920px;
-	width: 100%;
 	background: url("img/body__logo.png") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -392,14 +434,11 @@ body{
 /*main__products*/
 
 .main__product{
-	max-width: 1920px;
-	width: 100%;
+
 }
 
 .main__inner{
-	max-width: 1109px;
-	width: 100%;
-	margin: 0 auto;
+
 	color: #FFFFFF;
 	display: flex;
 	justify-content: center;
@@ -459,10 +498,7 @@ body{
 }
 
 .brends__inner{
-	max-width: 1109px;
-	width: 100%;
 	color: #FFFFFF;
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -508,8 +544,7 @@ body{
 
 .about{
 	height: 400px;
-	max-width: 1920px;
-	width: 100%;
+
 	background: url("img/about.png") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -641,4 +676,23 @@ input::-moz-placeholder {color: #969696;}
 
 .footer__item{
 	margin: 17px 0;
+}
+
+@media (max-width: 1280px) {
+
+}
+
+
+@media (max-width: 991px) {
+
+}
+
+
+@media (max-width: 767px) {
+
+}
+
+
+@media (max-width: 414px) {
+
 }
