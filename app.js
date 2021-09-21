@@ -1,9 +1,12 @@
 $(function() {
 
-	let header = $("#header__contacts");
+	let header = $("#header");
 	let intro = $("#header__link");
 	let headerH = header.innerHeight();
 	let scrollPos = $(window).scrollTop();
+   let nav = $("#nav");
+   let navToggle = $("#navToggle");
+
 
 	checkScroll (scrollPos, headerH)
 
@@ -21,6 +24,26 @@ $(function() {
 			intro.removeClass("fixed");
 		}
 	}
+
+
+    /* Smooth scroll */
+    $("[data-scroll]").on("click", function(event) {
+        event.preventDefault();
+
+        let elementId = $(this).data('scroll');
+        let elementOffset = $(elementId).offset().top;
+
+        console.log(elementOffset);
+
+        nav.removeClass("show");
+
+        $("html, body").animate({
+            scrollTop: elementOffset - 70
+        }, 700);
+    });
+
+
+
 
 
 });
